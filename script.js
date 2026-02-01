@@ -175,7 +175,7 @@ function renderLetter(){
 
   
   
-}
+
 
 // MUSIC (copyright-safe placeholder)
 const bgm = document.getElementById("bgm");
