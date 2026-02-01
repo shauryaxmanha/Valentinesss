@@ -76,8 +76,7 @@ BS took me hours to do, i didn't know where to start and it made me restart ever
 OOOOOOOOOOOO much baby, and i can genieunely talk abt my love for you and all the things i love abt u for hours but ik u dont want to read a harry potter book RN. I LOVE YOU BABY HAPPY VALENTINESSSS 
 `;
 
-// 3) Your video (YouTube link recommended)
-const YOUTUBE_LINK = ""; // Example: "https://www.youtube.com/watch?v=VIDEO_ID"
+
 
 // 4) Letter background photo (optional)
 // Upload a photo to repo like: "backgrounds/letter-bg.jpg"
@@ -92,7 +91,7 @@ const screens = {
   choose: document.getElementById("screen-choose"),
   photos: document.getElementById("screen-photos"),
   letter: document.getElementById("screen-letter"),
- // video: document.getElementById("screen-video"),
+
 };
 
 function showScreen(key){
@@ -173,39 +172,9 @@ function renderLetter(){
   }
 }
 
-// VIDEO
-//const videoWrap = document.getElementById("videoWrap");
-function toEmbed(url){
-  try{
-    const u = new URL(url);
-    if(u.hostname.includes("youtu.be")){
-      const id = u.pathname.replace("/", "");
-      return `https://www.youtube.com/embed/${id}`;
-    }
-    if(u.hostname.includes("youtube.com")){
-      const id = u.searchParams.get("v");
-      if(id) return `https://www.youtube.com/embed/${id}`;
-      if(u.pathname.startsWith("/embed/")) return url;
-    }
-  }catch(e){}
-  return null;
-}
-//function renderVideo(){
-  //videoWrap.innerHTML = "";
-  if(!YOUTUBE_LINK){
-   // videoWrap.innerHTML = `<p style="color:#6c4a56">No video yet. Add a YouTube link in <b>script.js</b> (YOUTUBE_LINK).</p>`;
-    return;
+
   }
-  const embed = toEmbed(YOUTUBE_LINK);
-  if(!embed){
-    //videoWrap.innerHTML = `<p style="color:#6c4a56">That link doesn’t look like YouTube. Use a YouTube share link.</p>`;
-    return;
-  }
-  const iframe = document.createElement("iframe");
-  iframe.src = embed;
-  iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-  iframe.allowFullscreen = true;
-  //videoWrap.appendChild(iframe);
+  
 }
 
 // MUSIC (copyright-safe placeholder)
