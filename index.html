@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manha, Will You Be My Valentine?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="hearts"></div>
+  <canvas id="confetti"></canvas>
+
+  <header class="topbar">
+    <div class="brand"><span class="brand__heart">❤</span><span class="brand__name">For Manha</span></div>
+    <button id="musicToggle" class="btn btn--ghost">♫ Music</button>
+  </header>
+
+  <main class="wrap">
+    <section id="screen-intro" class="card screen screen--active">
+      <h1 class="title">Manha,<br><span class="title__script">will you be my Valentine?</span></h1>
+      <div class="cta">
+        <button id="btnYes" class="btn btn--primary">Yes 💖</button>
+        <button id="btnNo" class="btn btn--secondary">No 🙈</button>
+      </div>
+      <p id="noMessage" class="hint"></p>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
