@@ -173,7 +173,7 @@ function renderLetter(){
 }
 
 
-  }
+  
   
 }
 
