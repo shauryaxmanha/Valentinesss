@@ -167,9 +167,9 @@ b
 .letter__to, .letter__from{ font-weight:700; }
 .letter__body{
   margin: 12px 0;
-  font-family: "Playfair Display", serif;
-  font-size: 28px;
-  line-height: 1.25;
+  font-family: "Playfair Display", serif;!important;
+  font-size: 26px;
+  line-height: 1.4;
   color: var(--primary);
   white-space: pre-wrap;
   text-shadow: 0 12px 26px rgba(255,45,116,.12);
