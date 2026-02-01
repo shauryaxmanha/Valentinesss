@@ -3,7 +3,48 @@
 // =====================
 
 // 1) Put your photos here (use direct image links OR upload images to the repo and reference them)
-const PHOTO_URLS = [
+const PHOTO_URLS = [const PHOTO_URLS = [
+  "https://i.postimg.cc/XNCNBbz0/lp-image.jpg",
+  "https://i.postimg.cc/HsmmJ7Mc/IMG-3726.jpg",
+  "https://i.postimg.cc/fbVQ4cG6/lp-image.jpg",
+  "https://i.postimg.cc/xT9rjVrN/lp-image.jpg",
+  "https://i.postimg.cc/Y9QVkbbV/IMG-3298.png",
+  "https://i.postimg.cc/65MP97fX/IMG-3106.png",
+  "https://i.postimg.cc/4Nx8FfRk/IMG-3055.png",
+  "https://i.postimg.cc/cHWh7ZBj/IMG-3016.jpg",
+  "https://i.postimg.cc/C5P4V8pM/IMG-2968.png",
+  "https://i.postimg.cc/gcSyj3QV/lp-image.jpg",
+  "https://i.postimg.cc/prpFz14C/IMG-2723.jpg",
+  "https://i.postimg.cc/j2wDLnnc/IMG-4253.jpg",
+  "https://i.postimg.cc/jjM2c4z1/IMG-4138.jpg",
+  "https://i.postimg.cc/XNmxjTrx/IMG-1709.jpg",
+  "https://i.postimg.cc/RFqQ9R9b/IMG-4059.jpg",
+  "https://i.postimg.cc/qvL83Y7B/IMG-1420.jpg",
+  "https://i.postimg.cc/9QW9CpBW/IMG-1377.png",
+  "https://i.postimg.cc/SRhsVSZV/IMG-0162.jpg",
+  "https://i.postimg.cc/HL8kgcRB/IMG-1232.jpg",
+  "https://i.postimg.cc/HW9sdCvW/IMG-3925.jpg",
+  "https://i.postimg.cc/C1HYhjN7/IMG-1052.jpg",
+  "https://i.postimg.cc/Z5BSBkHP/100-0548.jpg",
+  "https://i.postimg.cc/SsrFFmQS/100-0535.jpg",
+  "https://i.postimg.cc/ZKWgj8d2/IMG-0615.png",
+  "https://i.postimg.cc/bv9FdL79/IMG-0616.png",
+  "https://i.postimg.cc/K8X9NdFr/IMG-0606.jpg",
+  "https://i.postimg.cc/Hnqt6yGs/IMG-0306.png",
+  "https://i.postimg.cc/FHg2J9cH/IMG-0585.jpg",
+  "https://i.postimg.cc/x1YZQW7d/lp-image.jpg",
+  "https://i.postimg.cc/kGKj3cvW/IMG-0304.jpg",
+  "https://i.postimg.cc/wj0wp3LM/IMG-0294.jpg",
+  "https://i.postimg.cc/WpgS450R/IMG-0291.png",
+  "https://i.postimg.cc/d3j8jS9x/IMG-0285.jpg",
+  "https://i.postimg.cc/BnV2pF2g/IMG-0103.jpg",
+  "https://i.postimg.cc/50wvfkDN/100-3795.jpg",
+  "https://i.postimg.cc/qqw336k5/IMG-2276.jpg",
+  "https://i.postimg.cc/GpDTj5Lr/IMG-2274.jpg",
+  "https://i.postimg.cc/2jGbTvDH/DSC00164.jpg",
+  "https://i.postimg.cc/QCYMDQ8y/IMG-3817.jpg"
+];
+
   // Example if you upload photos to repo: "photos/photo1.jpg"
   // Or use an online direct image link (must end in .jpg/.png):
   // "https://example.com/pic1.jpg",
