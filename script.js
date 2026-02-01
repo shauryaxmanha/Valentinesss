@@ -3,9 +3,9 @@
 // =====================
 
 // 1) Put your photos here (use direct image links OR upload images to the repo and reference them)
-const PHOTO_URLS = [
- 
-  "https://i.postimg.cc/cHWh7ZBj/IMG-3016.jpg",
+const PHOTO_URLS = [ "https://i.postimg.cc/ZKb0XqcL/100-0359.jpg",
+"https://i.postimg.cc/C5FLyvb3/IMG-0104.jpg",
+ "https://i.postimg.cc/cHWh7ZBj/IMG-3016.jpg",
   "https://i.postimg.cc/C5P4V8pM/IMG-2968.png",
   "https://i.postimg.cc/gcSyj3QV/lp-image.jpg",
   "https://i.postimg.cc/prpFz14C/IMG-2723.jpg",
