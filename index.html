@@ -4,31 +4,121 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Manha, Will You Be My Valentine?</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="hearts"></div>
-  <canvas id="confetti"></canvas>
+  <div class="bg-hearts" aria-hidden="true"></div>
 
   <header class="topbar">
-    <div class="brand"><span class="brand__heart">❤</span><span class="brand__name">For Manha</span></div>
-    <button id="musicToggle" class="btn btn--ghost">♫ Music</button>
+    <div class="brand">
+      <span class="brand__heart">❤</span>
+      <span class="brand__name">For Manha</span>
+    </div>
+    <button id="musicToggle" class="btn btn--ghost" type="button" aria-pressed="false">
+      ♫ <span class="label">Music: Off</span>
+    </button>
   </header>
 
   <main class="wrap">
+
+    <!-- SCREEN 1: Question -->
     <section id="screen-intro" class="card screen screen--active">
-      <h1 class="title">Manha,<br><span class="title__script">will you be my Valentine?</span></h1>
+      <h1 class="title">
+        Manha,<br/>
+        <span class="title__script">will you be my Valentine?</span>
+      </h1>
+
       <div class="cta">
         <button id="btnYes" class="btn btn--primary">Yes 💖</button>
-        <button id="btnNo" class="btn btn--secondary">No 🙈</button>
+        <button id="btnNo" class="btn btn--secondary btn--no">No 🙈</button>
       </div>
+
       <p id="noMessage" class="hint"></p>
     </section>
+
+    <!-- SCREEN 2: Choose surprise -->
+    <section id="screen-choose" class="card screen">
+      <h2 class="heading">Yay!! 💞 Choose one</h2>
+      <p class="subtitle">Pick a surprise 👇</p>
+
+      <div class="choices">
+        <button class="choice" data-open="photos">
+          <div class="choice__emoji">📸</div>
+          <div>
+            <div class="choice__title">Pictures</div>
+            <div class="choice__sub">Our memories</div>
+          </div>
+        </button>
+
+        <button class="choice" data-open="letter">
+          <div class="choice__emoji">💌</div>
+          <div>
+            <div class="choice__title">Letter</div>
+            <div class="choice__sub">A message for you</div>
+          </div>
+        </button>
+
+        <button class="choice" data-open="video">
+          <div class="choice__emoji">🎥</div>
+          <div>
+            <div class="choice__title">Video</div>
+            <div class="choice__sub">A special clip</div>
+          </div>
+        </button>
+      </div>
+
+      <div class="row">
+        <button id="btnBack" class="btn btn--ghost">← Back</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: Photos -->
+    <section id="screen-photos" class="card screen">
+      <h2 class="heading">📸 Our Pictures</h2>
+      <p class="subtitle">Add your photos by editing <b>script.js</b> (super easy).</p>
+      <div id="photoGrid" class="gallery"></div>
+
+      <div class="row">
+        <button class="btn btn--ghost" data-goto="choose">← Back</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 4: Letter (with photo background) -->
+    <section id="screen-letter" class="card screen letter-bg">
+      <div class="letterCard">
+        <h2 class="heading">💌 A Letter For You</h2>
+        <div class="letter">
+          <div class="letter__to">To: <span>Manha</span></div>
+          <div id="letterBody" class="letter__body"></div>
+          <div class="letter__from">— <span id="letterFrom"></span></div>
+        </div>
+        <p class="subtitle small">You can edit the letter text in <b>script.js</b>.</p>
+
+        <div class="row">
+          <button class="btn btn--ghost" data-goto="choose">← Back</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 5: Video -->
+    <section id="screen-video" class="card screen">
+      <h2 class="heading">🎥 A Video For You</h2>
+      <p class="subtitle">Paste your YouTube link inside <b>script.js</b>.</p>
+      <div id="videoWrap" class="video"></div>
+
+      <div class="row">
+        <button class="btn btn--ghost" data-goto="choose">← Back</button>
+      </div>
+    </section>
+
   </main>
 
+  <audio id="bgm" preload="auto"></audio>
   <script src="./script.js"></script>
 </body>
 </html>
