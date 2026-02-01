@@ -3,7 +3,7 @@
 // =====================
 
 // 1) Put your photos here (use direct image links OR upload images to the repo and reference them)
-const PHOTO_URLS = [https://i.imgur.com/AbC123.jpg
+const PHOTO_URLS = ["https://i.imgur.com/AbC123.jpg"
   // Example if you upload photos to repo: "photos/photo1.jpg"
   // Or use an online direct image link (must end in .jpg/.png):
   // "https://example.com/pic1.jpg",
