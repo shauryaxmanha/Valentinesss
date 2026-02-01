@@ -4,13 +4,7 @@
 
 // 1) Put your photos here (use direct image links OR upload images to the repo and reference them)
 const PHOTO_URLS = [
-  "https://i.postimg.cc/XNCNBbz0/lp-image.jpg",
-  "https://i.postimg.cc/HsmmJ7Mc/IMG-3726.jpg",
-  "https://i.postimg.cc/fbVQ4cG6/lp-image.jpg",
-  "https://i.postimg.cc/xT9rjVrN/lp-image.jpg",
-  "https://i.postimg.cc/Y9QVkbbV/IMG-3298.png",
-  "https://i.postimg.cc/65MP97fX/IMG-3106.png",
-  "https://i.postimg.cc/4Nx8FfRk/IMG-3055.png",
+ 
   "https://i.postimg.cc/cHWh7ZBj/IMG-3016.jpg",
   "https://i.postimg.cc/C5P4V8pM/IMG-2968.png",
   "https://i.postimg.cc/gcSyj3QV/lp-image.jpg",
