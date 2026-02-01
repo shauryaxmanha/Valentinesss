@@ -3,7 +3,7 @@
 // =====================
 
 // 1) Put your photos here (use direct image links OR upload images to the repo and reference them)
-const PHOTO_URLS = [const PHOTO_URLS = [
+const PHOTO_URLS = [
   "https://i.postimg.cc/XNCNBbz0/lp-image.jpg",
   "https://i.postimg.cc/HsmmJ7Mc/IMG-3726.jpg",
   "https://i.postimg.cc/fbVQ4cG6/lp-image.jpg",
@@ -45,10 +45,7 @@ const PHOTO_URLS = [const PHOTO_URLS = [
   "https://i.postimg.cc/QCYMDQ8y/IMG-3817.jpg"
 ];
 
-  // Example if you upload photos to repo: "photos/photo1.jpg"
-  // Or use an online direct image link (must end in .jpg/.png):
-  // "https://example.com/pic1.jpg",
-];
+  
 
 // 2) Your letter text + your name
 const LETTER_FROM = "Shaurya";
