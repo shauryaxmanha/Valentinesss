@@ -12,7 +12,7 @@
 }
 
 *{ box-sizing:border-box; }
-body{
+b
   margin:0;
   font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text);
@@ -167,7 +167,7 @@ body{
 .letter__to, .letter__from{ font-weight:700; }
 .letter__body{
   margin: 12px 0;
-  font-family: "Great Vibes", cursive;
+  font-family: "Playfair Display", serif;
   font-size: 28px;
   line-height: 1.25;
   color: var(--primary);
