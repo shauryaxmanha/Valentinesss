@@ -92,7 +92,7 @@ const screens = {
   choose: document.getElementById("screen-choose"),
   photos: document.getElementById("screen-photos"),
   letter: document.getElementById("screen-letter"),
-  video: document.getElementById("screen-video"),
+ // video: document.getElementById("screen-video"),
 };
 
 function showScreen(key){
@@ -135,7 +135,7 @@ document.querySelectorAll(".choice").forEach(btn => {
     showScreen(which);
     if(which === "photos") renderPhotos();
     if(which === "letter") renderLetter();
-    if(which === "video") renderVideo();
+   // if(which === "video") renderVideo();
   });
 });
 
@@ -174,7 +174,7 @@ function renderLetter(){
 }
 
 // VIDEO
-const videoWrap = document.getElementById("videoWrap");
+//const videoWrap = document.getElementById("videoWrap");
 function toEmbed(url){
   try{
     const u = new URL(url);
@@ -190,22 +190,22 @@ function toEmbed(url){
   }catch(e){}
   return null;
 }
-function renderVideo(){
-  videoWrap.innerHTML = "";
+//function renderVideo(){
+  //videoWrap.innerHTML = "";
   if(!YOUTUBE_LINK){
-    videoWrap.innerHTML = `<p style="color:#6c4a56">No video yet. Add a YouTube link in <b>script.js</b> (YOUTUBE_LINK).</p>`;
+   // videoWrap.innerHTML = `<p style="color:#6c4a56">No video yet. Add a YouTube link in <b>script.js</b> (YOUTUBE_LINK).</p>`;
     return;
   }
   const embed = toEmbed(YOUTUBE_LINK);
   if(!embed){
-    videoWrap.innerHTML = `<p style="color:#6c4a56">That link doesn’t look like YouTube. Use a YouTube share link.</p>`;
+    //videoWrap.innerHTML = `<p style="color:#6c4a56">That link doesn’t look like YouTube. Use a YouTube share link.</p>`;
     return;
   }
   const iframe = document.createElement("iframe");
   iframe.src = embed;
   iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
   iframe.allowFullscreen = true;
-  videoWrap.appendChild(iframe);
+  //videoWrap.appendChild(iframe);
 }
 
 // MUSIC (copyright-safe placeholder)
